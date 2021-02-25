@@ -1,46 +1,49 @@
-<form method="POST" action="form.php">
-  <table class="center">
-    <tr>
-      <td>Nombre:</td>
-      <td>
-        <input type="text"name="name" size="40">
-      </td>
-    </tr>
-    <tr>
-      <td>Apellidos:</td>
-      <td>
-        <input type="text"name="name" size="40">
-      </td>
-    </tr>
-    <tr>
-      <td>Correo:</td>
-      <td><input type="email" name="email" size="40"></td>
-    </tr>
-  </table>
-  <br><br>
-  Eres:
-  <input type="radio" name="genero" value="hombre">Hombre
-  <input type="radio" name="genero" value="mujer">Mujer
-  <br><br>
-  Selecciona lo que sabes:
-  <br><br>
-  <input type="checkbox" name="skills" value="java">Java
-  <input type="checkbox" name="skills" value="c">C/C++
-  <input type="checkbox" name="skills" value="basic">Basic
-  <input type="checkbox" name="skills" value="html">HTML
-  <br><br>
-  Selecciona el idioma que comprendes:
-  <br><br>
-  <select name="idiomas" size="6">
-    <option value="es">Español</option>
-    <option value="en">Inglés</option>
-    <option value="fr">Frances</option>
-    <option value="de">Aleman</option>
-  </select>
-  Comentarios adicionales:
-  <br><br>
-  <textarea name="mensaje" rows="5" cols="20"></textarea>
-  <br><br>
-  <input type="reset" value="Borrar" name="borrar">
-  <input type="submit" value="Enviar" name="enviar">
-</form>
+<div class="column middle">
+  <form method="POST" action="form.php">
+    <table class="center">
+      <tr>
+        <td>Nombre:</td>
+        <td>
+          <input type="text"name="name" size="40" placeholder="Your name..">
+        </td>
+      </tr>
+      <tr>
+        <td>Apellidos:</td>
+        <td>
+          <input type="text"name="name" size="40" placeholder="Your last name..">
+        </td>
+      </tr>
+      <tr>
+        <td>Correo:</td>
+        <td><input type="email" name="email" size="40" placeholder="Your email.."></td>
+      </tr>
+    </table>
+    <br><br>
+    Eres:
+    <input type="radio" name="genero" value="hombre">Hombre
+    <input type="radio" name="genero" value="mujer">Mujer
+    <br><br>
+    Selecciona lo que sabes:
+    <br><br>
+    <input type="checkbox" name="skills" value="java">Java
+    <input type="checkbox" name="skills" value="c">C/C++
+    <input type="checkbox" name="skills" value="basic">Basic
+    <input type="checkbox" name="skills" value="html">HTML
+    <br><br>
+    Selecciona el idioma que comprendes:
+    <br><br>
+    <select name="idiomas">
+      <option value="es">Español</option>
+      <option value="en">Inglés</option>
+      <option value="fr">Frances</option>
+      <option value="de">Aleman</option>
+    </select>
+    <br><br>
+    Comentarios adicionales:
+    <br><br>
+    <textarea name="mensaje" rows="5" cols="20"></textarea>
+    <br><br>
+    <input type="reset" value="Borrar" name="borrar">
+    <input type="submit" value="Enviar" name="enviar">
+  </form>
+</div>
