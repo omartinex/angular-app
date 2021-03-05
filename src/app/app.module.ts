@@ -11,6 +11,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { NavComponent } from './components/nav/nav.component';
+import { InterpolacionComponent } from './components/interpolacion/interpolacion.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavComponent } from './components/nav/nav.component';
     ContactoComponent,
     HomeComponent,
     BlogComponent,
-    NavComponent
+    NavComponent,
+    InterpolacionComponent
   ],
   imports: [
     BrowserModule,
