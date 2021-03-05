@@ -6,12 +6,15 @@ import{ Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { InterpolacionComponent } from './components/interpolacion/interpolacion.component';
+
 
 //Array de rutas
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'blog', component: BlogComponent},
+  {path: 'interpolacion', component: InterpolacionComponent},
   {path: 'formulario', component: FormularioComponent}
 ];
 
