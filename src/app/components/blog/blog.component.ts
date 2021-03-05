@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
+  valor3: string;
+
   constructor() { }
 
   ngOnInit(): void {

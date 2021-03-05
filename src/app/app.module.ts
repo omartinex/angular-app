@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { NavComponent } from './components/nav/nav.component';
 import { InterpolacionComponent } from './components/interpolacion/interpolacion.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { InterpolacionComponent } from './components/interpolacion/interpolacion
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
