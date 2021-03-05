@@ -84,14 +84,37 @@ body {
 }
 
 aside {
+  height: 100%;
   width: 25%;
+  z-index: 1;
   padding-left: 15px;
   margin-left: 15px;
   margin-top: 15px;
   float: right;
   font-style: italic;
-  background-color: lightgray;
+  background-color: rgb(199, 163, 197);
 }
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+div#right-sidebar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: <length>;
+  height: 100%;
+ }
+
 
 /* #pie {
   clear: both;
@@ -212,7 +235,6 @@ article {
 div {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
 }
 
 form {
@@ -267,3 +289,4 @@ input[type=reset] {
   border-radius: 4px;
   cursor: pointer;
 }
+
