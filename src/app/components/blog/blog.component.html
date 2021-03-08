@@ -7,7 +7,7 @@
     <p>{{esActivo()}}</p>
     <p>{{ 1 + 1 }}</p>
     <br>
-    <p>Ingrese el valor
+    <p>Ingrese su nombre
       <input [(ngModel)]="valor3" type="text">
     </p>
     {{valor3}}
@@ -28,6 +28,6 @@
     <h1 *ngIf="promedio() < 3; else aprobo">Perdió el semestre</h1>
     <ng-template #aprobo><h1>Aprobó el semestre</h1></ng-template>
     <br>
-    <input type="reset" value="Borrar" name="borrar">
+    <!-- <input type="reset" value="Borrar" name="borrar"> -->
   <!-- </form> -->
 </div>
