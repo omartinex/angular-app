@@ -1,15 +1,33 @@
-<h1 class="subheader">blog</h1>
-
 <div class="column middle">
-  <p>Nombre del empleado:{{nombre}}</p>
-  <p>edad:{{edad}}</p>
-  <p>los ultimos 3 sueldos son:{{sueldos[0]}}, {{sueldos[1]}} y {{sueldos[2]}}</p>
-  <p>en los ultimos 3 meses ha ganado:{{ultimos3Sueldos()}}</p>
-  <p>{{esActivo()}}</p>
-  <p>{{ 1 + 1 }}</p>
-  <br>
-  <p>Ingrese el valor
-    <input [(ngModel)]="valor3" type="text">
-  </p>
-  {{valor3}}
+  <!-- <form> -->
+    <p>Nombre del empleado:{{nombre}}</p>
+    <p>edad:{{edad}}</p>
+    <p>los ultimos 3 sueldos son:{{sueldos[0]}}, {{sueldos[1]}} y {{sueldos[2]}}</p>
+    <p>en los ultimos 3 meses ha ganado:{{ultimos3Sueldos()}}</p>
+    <p>{{esActivo()}}</p>
+    <p>{{ 1 + 1 }}</p>
+    <br>
+    <p>Ingrese el valor
+      <input [(ngModel)]="valor3" type="text">
+    </p>
+    {{valor3}}
+    <p>Matemáticas (0 - 5)
+      <input [(ngModel)]="nota1" type="number" min="0" max="5">
+    </p>
+    <p>Español (0 - 5)
+      <input [(ngModel)]="nota2" type="number" min="0" max="5">
+    </p>
+    <p>Ciencias (0 - 5)
+      <input [(ngModel)]="nota3" type="number" min="0" max="5">
+    </p>
+    <p>
+      Promedio:
+      {{promedio()}}
+    </p>
+    <p>
+    <h1 *ngIf="promedio() < 3; else aprobo">Perdió el semestre</h1>
+    <ng-template #aprobo><h1>Aprobó el semestre</h1></ng-template>
+    <br>
+    <input type="reset" value="Borrar" name="borrar">
+  <!-- </form> -->
 </div>
