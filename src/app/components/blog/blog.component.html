@@ -7,27 +7,6 @@
     <p>{{esActivo()}}</p>
     <p>{{ 1 + 1 }}</p>
     <br>
-    <p>Ingrese su nombre
-      <input [(ngModel)]="valor3" type="text">
-    </p>
-    {{valor3}}
-    <p>Matemáticas (0 - 5)
-      <input [(ngModel)]="nota1" type="number" min="0" max="5">
-    </p>
-    <p>Español (0 - 5)
-      <input [(ngModel)]="nota2" type="number" min="0" max="5">
-    </p>
-    <p>Ciencias (0 - 5)
-      <input [(ngModel)]="nota3" type="number" min="0" max="5">
-    </p>
-    <p>
-      Promedio:
-      {{promedio()}}
-    </p>
-    <p>
-    <h1 *ngIf="promedio() < 3; else aprobo">Perdió el semestre</h1>
-    <ng-template #aprobo><h1>Aprobó el semestre</h1></ng-template>
-    <br>
     <!-- <input type="reset" value="Borrar" name="borrar"> -->
   <!-- </form> -->
 </div>

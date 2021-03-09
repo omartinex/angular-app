@@ -25,6 +25,11 @@ p {
   color: chartreuse;
 }
 
+h1.center {
+  font: bold 20px verdana, sans-serif;
+  text-align: center;
+}
+
 h1 {
   font: bold 20px verdana, sans-serif;
 }
@@ -215,6 +220,12 @@ article {
   float: left;
 }
 
+/* full column */
+.column.full {
+  width: 80%;
+  text-align: left;
+}
+
 /* Left and right column */
 .column.side {
   width: 25%;
@@ -223,6 +234,18 @@ article {
 /* Middle column */
 .column.middle {
   width: 70%;
+}
+
+/* Left and right column */
+.col.side {
+  width: 40%;
+  float: right;
+}
+
+/* Middle column */
+.col.middle {
+  width: 40%;
+  float: left;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
