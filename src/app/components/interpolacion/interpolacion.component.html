@@ -42,4 +42,14 @@
     <p>{{promedio()}}</p>
   </div>
 </div>
+<div class="column full">
+  <h1 class="center">Numero</h1>
+  <div class="col middle">
+    <p>Numero
+      <input [(ngModel)]="num" type="number">
+    </p>
+    <p *ngIf="num > 0"; else negativo>{{num}} es positivo.</p>
+    <ng-template #negativo>{{num}} es negativo.</ng-template>
+  </div>
+</div>
 

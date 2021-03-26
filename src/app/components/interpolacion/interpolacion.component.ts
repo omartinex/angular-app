@@ -15,6 +15,7 @@ export class InterpolacionComponent implements OnInit {
   quimica: number;
   fisica: number;
   prom: number;
+  num: number;
 
   constructor() {
     /* this.user = {
@@ -84,6 +85,15 @@ export class InterpolacionComponent implements OnInit {
     }
     else {
       return 'Ha perdido Fisica';
+    }
+  }
+
+  esPositivo() {
+    if (this.num >= 0) {
+      return this.num + 'Es positivo';
+    }
+    else {
+      return this.num + 'Es negativo';
     }
   }
 
